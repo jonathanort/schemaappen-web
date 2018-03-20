@@ -321,6 +321,9 @@ blockquote{
 .pt-100{
 	padding-top:100px;
 }
+.mt-100{
+	margin-top: 100px;
+}
 .pb-120{
 	padding-bottom:120px;
 }
@@ -2314,7 +2317,7 @@ label.error {
 	.fearures-mockup-dubble {
 		margin:0 auto;
 		margin-bottom: -110px;
-		margin-top: -120px;
+		margin-top: 0px;
 		left:15px;
 		max-width:320px;
 	}
@@ -2337,7 +2340,7 @@ label.error {
 	.fearures-mockup-dubble {
 		transform: scale(.8);
 		margin-bottom: -110px;
-		margin-top: -120px;
+		margin-top: -50px;
 		left:15px;
 		max-width:320px;
 	}
