@@ -24,33 +24,6 @@
 		<link href="assets/css/theme-green-blue.css?ver=1.2" rel="stylesheet">
 	</head>
 	<body class="theme-default">
-
-		<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '95100348886',
-          xfbml      : true,
-          version    : 'v2.6'
-        });
-      };
-
-      (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-		</script>
-
-		<script type="text/javascript">
-			(function(a,l,b,c,r,s){
-			_nQc=c,r=a.createElement(l),s=a.getElementsByTagName(l)[0];
-			r.async=1;
-			r.src=l.src=("https:"==a.location.protocol?"https://":"http://")+b;
-			s.parentNode.insertBefore(r,s);})
-			(document,"script","serve.albacross.com/track.js","89300970");
-		</script>
 		<!-- Start .header-section -->
 		<div id="home" class="header-section flex-box-middle section  gradiant-background header-curbed">
 
@@ -396,13 +369,8 @@
 					<div class="col-md-6 col-md-offset-3">
 						<div class="contact-form white-bg text-center">
 							<h3>Kontakta Oss</h3>
+							<p>Skriv i chatten nere i högra hörnet</p>
 							<p>Vi svarar oftast inom 24 timmar</p>
-							<div class="fb-messengermessageus"
-									messenger_app_id="95100348886"
-									page_id="373589202723472"
-									color="blue"
-									size="large">
-							</div>
 						</div>
 					</div><!-- .col  -->
 				</div><!-- .row  -->
@@ -445,6 +413,37 @@
 
 		<script src="assets/js/jquery.bundle.js"></script>
 		<script src="assets/js/script.js"></script>
+
+		<!-- Albacross Code -->
+		<script type="text/javascript">
+		(function(a,l,b,c,r,s){
+		_nQc=c,r=a.createElement(l),s=a.getElementsByTagName(l)[0];
+		r.async=1;
+		r.src=l.src=("https:"==a.location.protocol?"https://":"http://")+b;
+		s.parentNode.insertBefore(r,s);})
+		(document,"script","serve.albacross.com/track.js","89300970");
+		</script>
+		<!-- Albacross Code end -->
+
+		<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/sv_SE/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat"
+			attribution="setup_tool"
+			page_id="373589202723472"
+			theme_color="#00aba9"
+			logged_in_greeting="Hej! Har du några frågor om appen eller behöver hjälp?"
+			logged_out_greeting="Hej! Har du några frågor om appen eller behöver hjälp?">
+		</div>
+		<!-- End Facebook Chat Code -->
 
 	</body>
 </html>
